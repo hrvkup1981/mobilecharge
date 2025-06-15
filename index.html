@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MobileCharge je mobilna punionica za električna vozila koja dolazi na vašu lokaciju. Pokrivamo Zagreb i bližu okolicu.">
+    <meta name="keywords" content="mobilna punionica, električna vozila, MobileCharge, Zagreb, punjenje EV">
+    <meta name="author" content="MobileCharge">
+    <meta property="og:title" content="MobileCharge - Mobilna Punionica za EV Vozila">
+    <meta property="og:description" content="Pilot projekt mobilne punionice za električna vozila. Dolazimo na vašu lokaciju u Zagrebu i okolici.">
+    <meta property="og:image" content="https://hrvkup1981.github.io/mobilecharge/images/kombi.jpg">
+    <meta property="og:url" content="https://hrvkup1981.github.io/mobilecharge/">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>MobileCharge</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #ffffff;
+            color: #222;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        header img {
+            height: 60px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0a2151;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+        }
+        .hero p {
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+        .cta-button {
+            margin-top: 20px;
+            display: inline-block;
+            background-color: #009b2e;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .section {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .section h2 {
+            font-size: 1.8em;
+            color: #0a2151;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f1f1f1;
+            font-size: 14px;
+        }
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background: #0a2151;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+            header img {
+                height: 40px;
+            }
+            .cta-button {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+
+      window.onscroll = function() {
+          const btn = document.getElementById("back-to-top");
+          if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+              btn.style.display = "block";
+          } else {
+              btn.style.display = "none";
+          }
+      };
+
+      function scrollToTop() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="MobileCharge logo">
+        <nav>
+            <a href="#pocetna">POČETNA</a>
+            <a href="#onama">O NAMA</a>
+            <a href="#kontakt">KONTAKT</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="pocetna">
+        <img src="images/kombi.jpg" alt="MobileCharge kombi">
+        <p>MobileCharge je pilot projekt mobilne punionice za električna vozila — u fazi razvoja i testiranja.</p>
+        <br>
+        <a class="cta-button" href="#kontakt">Zatraži ponudu</a>
+    </section>
+
+    <section class="section" id="onama">
+        <h2>O nama</h2>
+        <p>MobileCharge je rješenje za mobilno punjenje električnih vozila na vašoj lokaciji. Projekt je usmjeren na podršku poslovnim korisnicima na području Zagreba i okolice.</p>
+    </section>
+
+    <section class="section" id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Za suradnju, informacije ili dogovor termina, pišite nam:</p>
+        <p><strong>Email:</strong> <a href="mailto:info@mobilecharge.hr">info@mobilecharge.hr</a></p>
+        <p><strong>Telefon:</strong> +385 99 123 4567</p>
+    </section>
+
+    <footer>
+        &copy; 2025 MobileCharge. Sva prava pridržana.
+    </footer>
+
+    <button id="back-to-top" onclick="scrollToTop()">Na vrh</button>
+</body>
+</html>
